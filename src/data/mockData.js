@@ -15,6 +15,7 @@ export const stores = [
     category: "meals",
     logoInitials: "JP",
     logoColor: "#D94F30",
+    image: "https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=400&h=250&fit=crop",
     description: "Save a delicious meal from Joe's Pizza! You'll get a Surprise Bag filled with a selection of their freshly made pizzas, calzones, or other Italian favorites.",
     address: "46-01 Queens Blvd, Sunnyside, NY 11104",
     ratings: {
@@ -45,6 +46,7 @@ export const stores = [
     category: "bread",
     logoInitials: "BB",
     logoColor: "#8B4513",
+    image: "https://images.unsplash.com/photo-1509440159596-0249088772ff?w=400&h=250&fit=crop",
     description: "Rescue amazing baked goods from Balthazar! Expect a generous Surprise Bag of artisan breads, croissants, pastries, and other freshly baked treats from one of NYC's most beloved bakeries.",
     address: "80 Spring St, New York, NY 10012",
     ratings: {
@@ -75,6 +77,7 @@ export const stores = [
     category: "groceries",
     logoInitials: "TJ",
     logoColor: "#CC0000",
+    image: "https://images.unsplash.com/photo-1542838132-92c53300491e?w=400&h=250&fit=crop",
     description: "Save fresh groceries from Trader Joe's! Your Surprise Bag may include fruits, vegetables, dairy items, baked goods, and other grocery products nearing their best-by date.",
     address: "47-20 Center Blvd, Long Island City, NY 11109",
     ratings: {
@@ -105,6 +108,7 @@ export const stores = [
     category: "bread",
     logoInitials: "LB",
     logoColor: "#5C3317",
+    image: "https://images.unsplash.com/photo-1558961363-fa8fdf82db35?w=400&h=250&fit=crop",
     description: "World-famous cookies and baked goods! Your Surprise Bag from Levain may include their legendary cookies, scones, muffins, and other fresh-baked delights.",
     address: "167 W 74th St, New York, NY 10023",
     ratings: {
@@ -135,6 +139,7 @@ export const stores = [
     category: "meals",
     logoInitials: "SG",
     logoColor: "#2E7D32",
+    image: "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=400&h=250&fit=crop",
     description: "Enjoy fresh, healthy meals from Sweetgreen! Your Surprise Bag will include a mix of their signature salads, warm bowls, and seasonal sides made with locally sourced ingredients.",
     address: "620 Lexington Ave, New York, NY 10022",
     ratings: {
@@ -165,6 +170,7 @@ export const stores = [
     category: "groceries",
     logoInitials: "WF",
     logoColor: "#00674B",
+    image: "https://images.unsplash.com/photo-1608686207856-001b95cf60ca?w=400&h=250&fit=crop",
     description: "Rescue premium groceries from Whole Foods! Your Surprise Bag may contain organic produce, prepared foods, bakery items, dairy products, and other high-quality grocery items.",
     address: "238 Bedford Ave, Brooklyn, NY 11249",
     ratings: {
@@ -195,6 +201,7 @@ export const stores = [
     category: "meals",
     logoInitials: "CM",
     logoColor: "#A1172F",
+    image: "https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=400&h=250&fit=crop",
     description: "Save tasty burritos and bowls from Chipotle! Your Surprise Bag will include a selection of their freshly prepared Mexican-inspired dishes like burritos, bowls, tacos, and sides.",
     address: "31-01 Steinway St, Astoria, NY 11103",
     ratings: {
@@ -225,6 +232,7 @@ export const stores = [
     category: "bread",
     logoInitials: "PB",
     logoColor: "#C4722A",
+    image: "https://images.unsplash.com/photo-1517433670267-08bbd4be890f?w=400&h=250&fit=crop",
     description: "Authentic Italian bakery treats! Save a Surprise Bag from Parisi filled with their handmade breads, focaccia, biscotti, and traditional Italian pastries baked fresh daily since 1903.",
     address: "198 Mott St, New York, NY 10012",
     ratings: {

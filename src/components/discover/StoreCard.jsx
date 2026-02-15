@@ -16,7 +16,7 @@ function StoreCard({ store }) {
     }
   }
 
-  const imageUrl = `https://picsum.photos/400/250?random=${store.id}`
+  const imageUrl = store.image || `https://picsum.photos/400/250?random=${store.id}`
   const pickupLabel = store.pickupDay === 'today' ? 'Today' : 'Tomorrow'
 
   return (
