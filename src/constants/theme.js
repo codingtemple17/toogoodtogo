@@ -56,7 +56,29 @@ export const CATEGORIES = [
   { key: 'meals', label: 'Meals' },
   { key: 'bread', label: 'Bread & pastries' },
   { key: 'groceries', label: 'Groceries' },
+  { key: 'flowers', label: 'Flowers' },
+  { key: 'other', label: 'Other' },
 ]
+
+// Section titles
+export const SECTION_TITLES = {
+  topPicks: 'Top picks near you',
+  localHeroes: 'Local Heroes',
+}
+
+// Location bar
+export const LOCATION = {
+  label: 'Current location',
+  area: 'Court Square, New York',
+}
+
+// Card dimensions
+export const CARD = {
+  width: '280px',
+  imageHeight: '200px',
+  logoSize: '40px',
+  gap: '12px',
+}
 
 // Bottom nav tabs
 export const NAV_TABS = [

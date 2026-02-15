@@ -1,9 +1,9 @@
 import { useLocation, useNavigate } from 'react-router-dom'
-import { Leaf, Search, Heart, User } from 'lucide-react'
+import { Compass, Search, Heart, User } from 'lucide-react'
 import { NAV_TABS } from '../../constants/theme'
 
 const TAB_ICONS = {
-  discover: Leaf,
+  discover: Compass,
   browse: Search,
   favorites: Heart,
   profile: User,
