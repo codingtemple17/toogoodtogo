@@ -60,7 +60,7 @@ Reference: `IMG_4591.PNG`
   - Each card: Food photo, store logo overlay (bottom-left), "Popular" badge (top-left), star rating (top-right), store name, bag type, pickup time + distance, dashed divider line, original price strikethrough + discounted price, heart/favorite icon
 - **Section: "Local Heroes"** with "See all" link
   - Same card format but with "Local Hero" badge
-- **Bottom navigation bar:** Discover (leaf icon, active), Browse (magnifying glass), Favorites (heart), Profile (person icon)
+- **Bottom navigation bar:** Discover (compass icon, active), Browse (magnifying glass), Favorites (heart), Profile (person icon)
 
 ### Screen 2: Store Detail Page (Top)
 Reference: `IMG_4593.PNG`
