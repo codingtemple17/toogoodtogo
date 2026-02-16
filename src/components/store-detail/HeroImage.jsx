@@ -25,7 +25,7 @@ function HeroImage({ store }) {
       {/* Back button - top left */}
       <button
         onClick={handleBack}
-        className="absolute top-4 left-4 w-9 h-9 rounded-full bg-white/90 flex items-center justify-center cursor-pointer border-none"
+        className="absolute top-4 left-4 w-9 h-9 rounded-full bg-white/90 flex items-center justify-center cursor-pointer border-none hover:bg-white transition-colors"
         aria-label="Go back"
       >
         <ArrowLeft size={20} className="text-tgtg-text" />
@@ -34,13 +34,13 @@ function HeroImage({ store }) {
       {/* Share and heart - top right */}
       <div className="absolute top-4 right-4 flex items-center gap-2">
         <button
-          className="w-9 h-9 rounded-full bg-white/90 flex items-center justify-center cursor-pointer border-none"
+          className="w-9 h-9 rounded-full bg-white/90 flex items-center justify-center cursor-pointer border-none hover:bg-white transition-colors"
           aria-label="Share store"
         >
           <Share2 size={18} className="text-tgtg-text" />
         </button>
         <button
-          className="w-9 h-9 rounded-full bg-white/90 flex items-center justify-center cursor-pointer border-none"
+          className="w-9 h-9 rounded-full bg-white/90 flex items-center justify-center cursor-pointer border-none hover:bg-white transition-colors"
           aria-label="Save to favorites"
         >
           <Heart size={18} className="text-tgtg-primary" />

@@ -26,7 +26,7 @@ function CategoryPills() {
             className={`whitespace-nowrap px-4 py-2 rounded-full text-sm font-medium border transition-colors shrink-0 cursor-pointer ${
               isActive
                 ? 'bg-tgtg-primary text-white border-tgtg-primary'
-                : 'bg-tgtg-gray-bg text-tgtg-text border-tgtg-border'
+                : 'bg-tgtg-gray-bg text-tgtg-text border-tgtg-border hover:bg-tgtg-border'
             }`}
           >
             {cat.label}

@@ -1,6 +1,6 @@
 import { useLocation, useNavigate } from 'react-router-dom'
 import { Compass, Search, Heart, User } from 'lucide-react'
-import { NAV_TABS } from '../../constants/theme'
+import { NAV_TABS, LAYOUT } from '../../constants/theme'
 
 const TAB_ICONS = {
   discover: Compass,
@@ -30,7 +30,7 @@ function BottomNav() {
   return (
     <nav
       className="absolute bottom-0 left-0 right-0 bg-tgtg-bg border-t border-tgtg-border flex items-center justify-around"
-      style={{ height: '64px' }}
+      style={{ height: LAYOUT.bottomNavHeight }}
       aria-label="Main navigation"
     >
       {NAV_TABS.map((tab) => {
@@ -41,7 +41,7 @@ function BottomNav() {
           <button
             key={tab.key}
             onClick={() => handleTabClick(tab.key)}
-            className="flex flex-col items-center justify-center gap-1 flex-1 h-full bg-transparent border-none cursor-pointer"
+            className="flex flex-col items-center justify-center gap-1 flex-1 h-full bg-transparent border-none cursor-pointer hover:opacity-70 transition-opacity"
             aria-label={tab.label}
             aria-current={isActive ? 'page' : undefined}
           >

@@ -23,7 +23,7 @@ function DirectionsSection({ store }) {
 
       {/* Get directions button */}
       <button
-        className="w-full py-3 rounded-xl border-2 border-tgtg-primary text-tgtg-primary font-semibold text-sm bg-transparent cursor-pointer"
+        className="w-full py-3 rounded-xl border-2 border-tgtg-primary text-tgtg-primary font-semibold text-sm bg-transparent cursor-pointer hover:bg-tgtg-primary hover:text-white transition-colors"
         aria-label="Get directions to store"
       >
         Get directions

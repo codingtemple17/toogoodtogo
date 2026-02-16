@@ -10,7 +10,14 @@ function RatingBar({ label, score }) {
       <span className="text-sm text-tgtg-text-secondary w-16 shrink-0">
         {label}
       </span>
-      <div className="flex-1 h-2 bg-tgtg-gray-bg rounded-full overflow-hidden">
+      <div
+        className="flex-1 h-2 bg-tgtg-gray-bg rounded-full overflow-hidden"
+        role="progressbar"
+        aria-valuenow={score}
+        aria-valuemin={0}
+        aria-valuemax={maxScore}
+        aria-label={`${label} rating ${score.toFixed(1)} out of ${maxScore}`}
+      >
         <div
           className="h-full bg-tgtg-rating-bar rounded-full"
           style={{ width: `${percentage}%` }}

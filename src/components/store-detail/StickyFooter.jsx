@@ -18,7 +18,7 @@ function StickyFooter({ store }) {
 
       {/* Reserve button */}
       <button
-        className="bg-tgtg-primary text-white font-semibold text-base px-8 py-3 rounded-xl border-none cursor-pointer"
+        className="bg-tgtg-primary text-white font-semibold text-base px-8 py-3 rounded-xl border-none cursor-pointer hover:bg-tgtg-accent transition-colors"
         aria-label={`Reserve for $${store.discountedPrice.toFixed(2)}`}
       >
         Reserve

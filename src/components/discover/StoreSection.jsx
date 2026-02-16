@@ -14,7 +14,7 @@ function StoreSection({ title, stores }) {
           {title}
         </h2>
         <button
-          className="text-tgtg-primary text-sm font-semibold bg-transparent border-none cursor-pointer"
+          className="text-tgtg-primary text-sm font-semibold bg-transparent border-none cursor-pointer hover:opacity-70 transition-opacity"
           aria-label={`See all ${title}`}
         >
           See all
@@ -23,7 +23,7 @@ function StoreSection({ title, stores }) {
 
       {/* Horizontal scroll row */}
       <div
-        className="flex overflow-x-auto hide-scrollbar pl-4 pr-2"
+        className="flex overflow-x-auto hide-scrollbar pl-4 pr-2 scroll-smooth snap-x snap-mandatory"
         style={{ gap: CARD.gap }}
       >
         {stores.map((store) => (

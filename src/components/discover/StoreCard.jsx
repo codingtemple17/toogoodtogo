@@ -26,7 +26,7 @@ function StoreCard({ store }) {
       tabIndex={0}
       role="link"
       aria-label={`${store.name} - ${store.bagType}`}
-      className="shrink-0 bg-tgtg-bg rounded-xl overflow-hidden cursor-pointer"
+      className="shrink-0 bg-tgtg-bg rounded-xl overflow-hidden cursor-pointer transition-shadow duration-200 hover:shadow-lg snap-start"
       style={{ width: CARD.width }}
     >
       {/* Image area */}
