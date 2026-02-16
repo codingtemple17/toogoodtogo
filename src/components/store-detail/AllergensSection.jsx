@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { ChevronUp, ChevronDown } from 'lucide-react'
+import { ChevronDown } from 'lucide-react'
 import { ALLERGENS_TEXT } from '../../constants/theme'
 
 function AllergensSection() {
@@ -8,8 +8,6 @@ function AllergensSection() {
   function handleToggle() {
     setIsOpen((prev) => !prev)
   }
-
-  const ChevronIcon = isOpen ? ChevronUp : ChevronDown
 
   return (
     <section className="px-4 py-4 border-t border-tgtg-border" aria-label="Ingredients and allergens">
@@ -21,13 +19,19 @@ function AllergensSection() {
         <h2 className="font-bold text-base text-tgtg-text">
           Ingredients &amp; allergens
         </h2>
-        <ChevronIcon size={20} className="text-tgtg-text-secondary shrink-0" />
+        <ChevronDown
+          size={20}
+          className={`text-tgtg-text-secondary shrink-0 transition-transform duration-200 ${isOpen ? 'rotate-180' : ''}`}
+        />
       </button>
 
       {isOpen && (
-        <p className="text-sm text-tgtg-text-secondary leading-relaxed mt-3">
-          {ALLERGENS_TEXT}
-        </p>
+        <div className="mt-3">
+          <p className="text-sm text-tgtg-text-secondary leading-relaxed">
+            {ALLERGENS_TEXT}
+          </p>
+          {/* DIETARY RESTRICTION SYMBOLS WILL BE ADDED HERE BY VICTOR */}
+        </div>
       )}
     </section>
   )
