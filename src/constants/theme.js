@@ -80,6 +80,28 @@ export const CARD = {
   gap: '12px',
 }
 
+// Store detail
+export const HERO_IMAGE_HEIGHT = '300px'
+export const STORE_LOGO_SIZE = '48px'
+
+// Rating labels and keys
+export const RATING_LABELS = ['Pickup', 'Quality', 'Variety', 'Quantity']
+export const RATING_KEYS = ['pickup', 'quality', 'variety', 'quantity']
+
+// Category display names (for tag pills on detail page)
+export const CATEGORY_DISPLAY = {
+  meals: 'Meal',
+  bread: 'Baked Goods',
+  groceries: 'Grocery',
+  flowers: 'Flowers',
+  other: 'Other',
+}
+
+// Static text
+export const PICKUP_INSTRUCTIONS_TEXT = 'Show your order in the app to a staff member to pick up your Surprise Bag.'
+export const ALLERGENS_TEXT = "We wish we could tell you what exactly will be in your Surprise Bag – but it's always a surprise! The store will fill it with a selection of their unsold items. If you have questions about allergens or specific ingredients, please ask the store."
+export const BRING_BAG_TEXT = 'We recommend bringing your own bag.'
+
 // Bottom nav tabs
 export const NAV_TABS = [
   { key: 'discover', label: 'Discover' },
