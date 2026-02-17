@@ -1,12 +1,19 @@
-import { useState } from 'react'
+import { useState, useRef } from 'react'
 import { ChevronDown } from 'lucide-react'
 import { ALLERGENS_TEXT } from '../../constants/theme'
 
 function AllergensSection() {
   const [isOpen, setIsOpen] = useState(false)
+  const contentRef = useRef(null)
 
   function handleToggle() {
-    setIsOpen((prev) => !prev)
+    const willOpen = !isOpen
+    setIsOpen(willOpen)
+    if (willOpen) {
+      setTimeout(() => {
+        contentRef.current?.scrollIntoView({ behavior: 'smooth', block: 'nearest' })
+      }, 50)
+    }
   }
 
   return (
@@ -26,7 +33,7 @@ function AllergensSection() {
       </button>
 
       {isOpen && (
-        <div className="mt-3">
+        <div className="mt-3" ref={contentRef}>
           <p className="text-sm text-tgtg-text-secondary leading-relaxed">
             {ALLERGENS_TEXT}
           </p>
