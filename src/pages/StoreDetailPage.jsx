@@ -37,7 +37,7 @@ function StoreDetailPage() {
         <DirectionsSection store={store} />
         <PickupInstructions />
         <PackagingSection store={store} />
-        <AllergensSection />
+        <AllergensSection store={store} />
       </div>
       <StickyFooter store={store} />
     </div>
