@@ -11,7 +11,7 @@ function AllergensSection() {
     setIsOpen(willOpen)
     if (willOpen) {
       setTimeout(() => {
-        contentRef.current?.scrollIntoView({ behavior: 'smooth', block: 'nearest' })
+        contentRef.current?.scrollIntoView({ behavior: 'smooth', block: 'end' })
       }, 50)
     }
   }
