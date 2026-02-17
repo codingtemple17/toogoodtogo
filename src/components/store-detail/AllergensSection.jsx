@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useState, useRef } from 'react'
 import { ChevronDown } from 'lucide-react'
 import { ALLERGENS_TEXT } from '../../constants/theme'
 import veganSymbol from '../../../assets/best_vegan.svg'
@@ -15,9 +15,16 @@ const DIETARY_SYMBOLS = {
 
 function AllergensSection({ store }) {
   const [isOpen, setIsOpen] = useState(false)
+  const contentRef = useRef(null)
 
   function handleToggle() {
-    setIsOpen((prev) => !prev)
+    const willOpen = !isOpen
+    setIsOpen(willOpen)
+    if (willOpen) {
+      setTimeout(() => {
+        contentRef.current?.scrollIntoView({ behavior: 'smooth', block: 'end' })
+      }, 50)
+    }
   }
 
   const symbols = store?.dietarySymbols ?? []
@@ -39,7 +46,7 @@ function AllergensSection({ store }) {
       </button>
 
       {isOpen && (
-        <div className="mt-3">
+        <div className="mt-3" ref={contentRef} style={{ paddingBottom: LAYOUT.stickyFooterHeight }}>
           <p className="text-sm text-tgtg-text-secondary leading-relaxed">
             {ALLERGENS_TEXT}
           </p>
