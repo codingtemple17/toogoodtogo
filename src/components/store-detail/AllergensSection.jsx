@@ -1,6 +1,6 @@
 import { useState, useRef } from 'react'
 import { ChevronDown } from 'lucide-react'
-import { ALLERGENS_TEXT } from '../../constants/theme'
+import { ALLERGENS_TEXT, LAYOUT } from '../../constants/theme'
 
 function AllergensSection() {
   const [isOpen, setIsOpen] = useState(false)
@@ -33,7 +33,7 @@ function AllergensSection() {
       </button>
 
       {isOpen && (
-        <div className="mt-3" ref={contentRef}>
+        <div className="mt-3" ref={contentRef} style={{ paddingBottom: LAYOUT.stickyFooterHeight }}>
           <p className="text-sm text-tgtg-text-secondary leading-relaxed">
             {ALLERGENS_TEXT}
           </p>
