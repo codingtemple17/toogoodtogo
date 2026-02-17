@@ -29,6 +29,7 @@ export const stores = [
       carrierBag: "Provided",
     },
     bagsLeft: 5,
+    dietarySymbols: [],
   },
   {
     id: 2,
@@ -60,6 +61,7 @@ export const stores = [
       carrierBag: "Provided",
     },
     bagsLeft: 3,
+    dietarySymbols: ['nut_free'],
   },
   {
     id: 3,
@@ -91,6 +93,7 @@ export const stores = [
       carrierBag: "Provided",
     },
     bagsLeft: 8,
+    dietarySymbols: ['vegan', 'dairy_free'],
   },
   {
     id: 4,
@@ -122,6 +125,7 @@ export const stores = [
       carrierBag: "Not provided",
     },
     bagsLeft: 2,
+    dietarySymbols: [],
   },
   {
     id: 5,
@@ -153,6 +157,7 @@ export const stores = [
       carrierBag: "Provided",
     },
     bagsLeft: 5,
+    dietarySymbols: ['vegan', 'gluten_free', 'dairy_free'],
   },
   {
     id: 6,
@@ -184,6 +189,7 @@ export const stores = [
       carrierBag: "Provided",
     },
     bagsLeft: 6,
+    dietarySymbols: ['gluten_free'],
   },
   {
     id: 7,
@@ -215,6 +221,7 @@ export const stores = [
       carrierBag: "Not provided",
     },
     bagsLeft: 4,
+    dietarySymbols: ['nut_free', 'dairy_free'],
   },
   {
     id: 8,
@@ -246,5 +253,6 @@ export const stores = [
       carrierBag: "Provided",
     },
     bagsLeft: 3,
+    dietarySymbols: ['vegan'],
   },
 ]

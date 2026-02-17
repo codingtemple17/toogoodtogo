@@ -1,8 +1,19 @@
 import { useState, useRef } from 'react'
 import { ChevronDown } from 'lucide-react'
-import { ALLERGENS_TEXT, LAYOUT } from '../../constants/theme'
+import { ALLERGENS_TEXT } from '../../constants/theme'
+import veganSymbol from '../../../assets/best_vegan.svg'
+import dairyFreeSymbol from '../../../assets/best_dairy_free.svg'
+import glutenFreeSymbol from '../../../assets/best_gluten_free.svg'
+import nutFreeSymbol from '../../../assets/best_nut_free.svg'
 
-function AllergensSection() {
+const DIETARY_SYMBOLS = {
+  vegan: { src: veganSymbol, alt: 'Vegan certified' },
+  dairy_free: { src: dairyFreeSymbol, alt: 'Dairy free' },
+  gluten_free: { src: glutenFreeSymbol, alt: 'Gluten free' },
+  nut_free: { src: nutFreeSymbol, alt: 'Nut free' },
+}
+
+function AllergensSection({ store }) {
   const [isOpen, setIsOpen] = useState(false)
   const contentRef = useRef(null)
 
@@ -15,6 +26,8 @@ function AllergensSection() {
       }, 50)
     }
   }
+
+  const symbols = store?.dietarySymbols ?? []
 
   return (
     <section className="px-4 py-4 border-t border-tgtg-border" aria-label="Ingredients and allergens">
@@ -37,7 +50,22 @@ function AllergensSection() {
           <p className="text-sm text-tgtg-text-secondary leading-relaxed">
             {ALLERGENS_TEXT}
           </p>
-          {/* DIETARY RESTRICTION SYMBOLS WILL BE ADDED HERE BY VICTOR */}
+          {symbols.length > 0 && (
+            <div className="flex gap-3 mt-4">
+              {symbols.map((key) => {
+                const symbol = DIETARY_SYMBOLS[key]
+                if (!symbol) return null
+                return (
+                  <img
+                    key={key}
+                    src={symbol.src}
+                    alt={symbol.alt}
+                    className="h-20"
+                  />
+                )
+              })}
+            </div>
+          )}
         </div>
       )}
     </section>
