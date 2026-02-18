@@ -1,6 +1,6 @@
 import { useState, useRef } from 'react'
 import { ChevronDown } from 'lucide-react'
-import { ALLERGENS_TEXT } from '../../constants/theme'
+import { ALLERGENS_TEXT, LAYOUT } from '../../constants/theme'
 import veganSymbol from '../../../assets/best_vegan.svg'
 import dairyFreeSymbol from '../../../assets/best_dairy_free.svg'
 import glutenFreeSymbol from '../../../assets/best_gluten_free.svg'
